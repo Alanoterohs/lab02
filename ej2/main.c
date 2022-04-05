@@ -58,8 +58,10 @@ int main(int argc, char *argv[]) {
     int copy[MAX_SIZE];
     array_copy(copy, array, length);
 
+    quick_sort(array, length);
     /* show the ordered array in the screen */
     array_dump(array, length);
+
 
     /* check if it is sorted */
     assert(array_is_sorted(array, length));
